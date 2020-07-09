@@ -7,4 +7,4 @@ Download the arcdps_check.ps1 file somewhere convenient.
 
 Right click it and select Run With Powershell.
 
-Lines 2-10 in the script can be removed if you are confident.
+Lines 2-10 in the script can be removed if you know the $myFile variable is correct.
