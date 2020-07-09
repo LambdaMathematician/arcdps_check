@@ -1,8 +1,8 @@
 $myFile = "C:\Program Files\Guild Wars 2\bin64\d3d9.dll"
-"****************************************************************************************************"
-"THIS SCRIPT WILL OVERWRITE $myFile.
+"****************************************************************************************************
+THIS SCRIPT WILL OVERWRITE $myFile.
 IF THE ARCDPS DLL IS NAMED SOMETHING ELSE PLEASE MODIFY THE MYFILE VARIABLE IN THE SCRIPT ACCORDINGLY
-"****************************************************************************************************"
+****************************************************************************************************
 Also note that if someone hacks the arcdps site and puts malicious code in the dll, it ain't my fault.
 You probably would have just downloaded and ran it manually.
 Feel free to delete these lines and in the script once you understand the risks."
