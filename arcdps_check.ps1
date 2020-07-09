@@ -26,6 +26,12 @@ Else {
     $installed_hash = [System.BitConverter]::ToString($md5Command.ComputeHash([System.IO.File]::ReadAllBytes($myFile))).Replace("-","").ToLower()
 
     If ($installed_hash -eq $web_hash) {"Validated download. You are now up to date."}
-    Else {"Download failed. Please run again. You may need to run as admin since we are replacing a file in C:\Program Files"}
+    Else {
+		"MD5 of downloaded file does not match published MD5 sum."
+	    "Possible reason:"
+	    "    Could not write to $myFile. Run again as admin/Grant permission to write to the folder."
+	    "    Download was corrupted somehow. Run again."
+	    "    New MD5 sum was not published. Extremely unlikely. Proceed with caution."
+	    }
     }
 Pause
