@@ -18,7 +18,7 @@ Else {$installed_hash = "N/A. $myFile does not exist."}
 
 # Get the md5 posted on the arcdps site
 $web_hash = (Invoke-WebRequest 'https://www.deltaconnected.com/arcdps/x64/d3d9.dll.md5sum').ToString().Remove(32)
-"Web Hash      : $web_hash"
+"Latest Hash   : $web_hash"
 ""
 
 If ($installed_hash -eq $web_hash) { echo "You are already on the latest arcdps." }
