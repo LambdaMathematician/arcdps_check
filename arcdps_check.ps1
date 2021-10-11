@@ -1,4 +1,5 @@
 $myFile = "C:\Program Files\Guild Wars 2\bin64\d3d9.dll" #Location and filename of arcdps dll
+$myFile11 = "C:\Program Files\Guild Wars 2\d3d11.dll" #Location and filename of arcdps dll
 "****************************************************************************************************
 THIS SCRIPT WILL OVERWRITE $myFile.
 IF THE ARCDPS DLL IS NAMED SOMETHING ELSE PLEASE MODIFY THE MYFILE VARIABLE IN THE SCRIPT ACCORDINGLY
@@ -30,7 +31,10 @@ Else {
     #make sure the download was good
     $installed_hash = [System.BitConverter]::ToString($md5Command.ComputeHash([System.IO.File]::ReadAllBytes($myFile))).Replace("-","").ToLower()
 
-    If ($installed_hash -eq $web_hash) {"Validated download. arcdps is updated."}
+    If ($installed_hash -eq $web_hash) {
+        cp $myfile $myfile11
+        "Validated download. arcdps is updated for both dx9 and dx11."
+        }
     Else {
 		"Something's gone wrong. MD5 of downloaded file does not match published MD5 sum."
 	    "Possible reason:"
