@@ -1,6 +1,6 @@
 $dx9path = "C:\Program Files\Guild Wars 2\bin64\d3d9.dll" #Location and filename of arcdps dll
 $dx11path = "C:\Program Files\Guild Wars 2\d3d11.dll" #Location and filename of arcdps dll
-$use_default_choice = $false #change this to $true if you always know what you want to use the default
+$use_default_choice = $false #change this to $true if you always know you want to use the default below
 $default_choice = 9  #modify as wanted
 
 "****************************************************************************************************
@@ -65,10 +65,6 @@ function Install-ArcDPS{
     ""
 }
 
-#if you already know what you always want to do, just do it here and exit out
-#Remove-ArcDPS -Path $dx11path
-#Install-ArcDPS -Path $dx9path
-#Exit
 
 #choose your destiny
 If ($use_default_choice) {$install_choice = $default_choice}
