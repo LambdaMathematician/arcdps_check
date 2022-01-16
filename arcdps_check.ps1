@@ -4,7 +4,9 @@ $use_default_choice = $false #change this to $true if you always know what you w
 $default_choice = 9  #modify as wanted
 
 "****************************************************************************************************
-THIS SCRIPT WILL OVERWRITE $myFile.
+THIS SCRIPT WILL OVERWRITE
+$dx9path and/or
+$dx11path
 IF THE ARCDPS DLL IS NAMED SOMETHING ELSE PLEASE MODIFY THE MYFILE VARIABLE IN THE SCRIPT ACCORDINGLY
 ****************************************************************************************************
 Also note that if someone hacks the arcdps site and puts malicious code in the dll, it ain't my fault.
