@@ -1,5 +1,5 @@
 $dx9path = "C:\Program Files\Guild Wars 2\bin64\d3d9.dll" #Location and filename of arcdps dll
-$dx11path = "C:\Program Files\Guild Wars 2\d3d11.dll" #Location and filename of arcdps dll
+$dx11path = "C:\Program Files\Guild Wars 2\d3d11.dll" #Location and filename of arcdps dx11 dll
 $use_default_choice = $false #change this to $true if you always know you want to use the default below
 $default_choice = 9  #modify as wanted
 
@@ -7,10 +7,11 @@ $default_choice = 9  #modify as wanted
 THIS SCRIPT WILL OVERWRITE
 $dx9path and/or
 $dx11path
-IF THE ARCDPS DLL IS NAMED SOMETHING ELSE PLEASE MODIFY THE MYFILE VARIABLE IN THE SCRIPT ACCORDINGLY
+IF THE ARCDPS DLL IS NAMED SOMETHING ELSE PLEASE MODIFY THE `$dx9path and `$dx11path
+VARIABLES IN THE SCRIPT ACCORDINGLY
 ****************************************************************************************************
 Also note that if someone hacks the arcdps site and puts malicious code in the dll, it ain't my fault.
-You probably would have just downloaded and ran it manually.
+You probably would have just downloaded and ran it manually anyway.
 Feel free to delete these lines and in the script once you understand the risks."
 ""
 
